@@ -1,0 +1,25 @@
+[
+ {
+				"identifier": "abc123",
+				"identifier_image": "img/img1.png",
+				"results": [1, 3, 2, 4, 1],
+				"result_image": "img/img2.jpg",
+				"confirmed_identifier": "ABC124",
+				"confirmed_results": [1, 3, 2, 4, 1]
+	},{
+				"identifier": "abc1233",
+				"identifier_image": "img/img2.jpg",
+				"results": [2, 3, 2, 4, 1],
+				"result_image": "img/img1.png",
+				"confirmed_identifier": "",
+				"confirmed_results": [1, 3, 2, 4, 1]
+	},{
+				"identifier": "abc133233",
+				"identifier_image": "img/img3.jpg",
+				"results": [2, 3, 2, 4, 1],
+				"result_image": "img/img2.jpg",
+				"confirmed_identifier": "",
+				"confirmed_results": [1, 3, 2, 4, 1]
+	}
+]
+

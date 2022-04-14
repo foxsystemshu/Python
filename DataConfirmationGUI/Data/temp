@@ -1,0 +1,50 @@
+def window_init_set(title, x_size, y_size):
+    global lbl_identifier_ch
+    window = tk.Tk()
+    window.title(title)
+    window.minsize(x_size, y_size)
+    window.maxsize(x_size, y_size)
+
+    # fixed label objects
+    lbl_identifier = tk.Label(window, text="Identifier:")
+    lbl_identifier.place(relx=0.08, rely=0.08)
+
+    lbl_identifier_ch = tk.Label(window, text="0")
+    lbl_identifier_ch.place(relx=0.25, rely=0.08)
+
+    lbl_c_identifier = tk.Label(window, text="Confirmed identifier:")
+    lbl_c_identifier.place(relx=0.08, rely=0.12)
+
+    lbl_results = tk.Label(window, text="Results:")
+    lbl_results.place(relx=0.08, rely=0.25)
+
+    lbl_c_results = tk.Label(window, text="Confirmed results:")
+    lbl_c_results.place(relx=0.08, rely=0.29)
+
+    lbl_s_identifier = tk.Label(window, text="Identifier:")
+    lbl_s_identifier.place(relx=0.40, rely=0.78)
+
+    # Input objects
+    txt_c_identifier = tk.Entry(window, width=20)
+    txt_c_identifier.place(relx=0.25, rely=0.12)
+
+    txt_c_results = tk.Entry(window, width=20)
+    txt_c_results.place(relx=0.25, rely=0.29)
+
+    txt_s_identifier = tk.Entry(window, width=20)
+    txt_s_identifier.place(relx=0.48, rely=0.78)
+
+    # Button objects
+    btn_previous = tk.Button(window)
+    btn_previous["text"] = "Show previous"
+    btn_previous.place(relx=0.08, rely=0.85)
+
+    btn_search = tk.Button(window)
+    btn_search["text"] = "Search"
+    btn_search.place(relx=0.492, rely=0.85)
+
+    btn_next = tk.Button(window)
+    btn_next["text"] = "Show next"
+    btn_next.place(relx=0.85, rely=0.85)
+
+    window.mainloop()
